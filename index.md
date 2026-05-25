@@ -8,7 +8,7 @@ I am a Ph.D. student at the [School of Computer Science and Informatics](https:/
 
 Prior to this, I obtained a Master's degree from [Hong Kong Baptist University](https://www.hkbu.edu.hk/) and a Bachelor's degree from [Anhui Agricultural University](https://eng.ahau.edu.cn/).
 
-My current research focuses on formal methods (FM), particularly reactive synthesis with Linear Temporal Logic on Finite Traces (LTLf). In the future, I plan to explore the interdisciplinary research area of artificial intelligence (AI) and formal methods, focusing on the development of trustworthy autonomous AI systems.
+My current research focuses on formal methods (FM), particularly reactive synthesis with linear temporal logic on finite traces (LTLf). In the future, I plan to explore the interdisciplinary research area of artificial intelligence (AI) and formal methods, focusing on the development of trustworthy autonomous AI systems.
 
 <!-- ## Research Interests
 
