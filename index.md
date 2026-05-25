@@ -3,21 +3,21 @@ layout: homepage
 ---
 
 ## About Me
+I am a Ph.D. student at the School of Computer Science and Informatics, 
+University of Liverpool, advised by Dr. Shufang Zhu and Prof. Sven Schewe.
 
-I am a Ph.D. student at ...
+Prior to this, I obtained a Master's degree from Hong Kong Baptist University and a Bachelor's degree from Anhui Agricultural University.
 
-## Research Interests
+My current research focuses on formal methods (FM), particularly reactive synthesis with linear temporal logic on finite traces (LTLf). In the future, I plan to explore the interdisciplinary research area of artificial intelligence (AI) and formal methods, focusing on the development of trustworthy autonomous AI systems.
 
-- **Computer Vision:** image recognition, image generation, video captioning
-- **Machine Learning:** meta-learning, incremental learning, transfer learning
+<!-- ## Research Interests
+
+- **Formal Methods:** Reactive Synthesis -->
 
 ## News
 
-- **[Feb. 2020]** Our paper about incremental learning is accepted to CVPR 2020.
-- **[Feb. 2020]** We will host the ACM Multimedia Asia 2020 conference in Singapore!
-- **[Sept. 2019]** Our paper about few-shot learning is accepted to NeurIPS 2019.
-- **[Mar. 2019]** Our paper about few-shot learning is accepted to CVPR 2019.
+- **[May. 2026]** Our paper "Optimal LTLf Synthesis" is accepted to IJCAI 2026.
 
 {% include_relative _includes/publications.md %}
 
-{% include_relative _includes/services.md %}
+{% comment %}{% include_relative _includes/services.md %}{% endcomment %}
