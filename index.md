@@ -3,8 +3,8 @@ layout: homepage
 ---
 
 ## About Me
-I am a Ph.D. student at the School of Computer Science and Informatics, 
-University of Liverpool, advised by Dr. Shufang Zhu and Prof. Sven Schewe.
+I am a Ph.D. student at the [School of Computer Science and Informatics](https://www.liverpool.ac.uk/computer-science-and-informatics/), 
+[University of Liverpool](https://www.liverpool.ac.uk/), advised by [Dr. Shufang Zhu](https://www.liverpool.ac.uk/people/shufang-zhu) and [Prof. Sven Schewe](https://www.liverpool.ac.uk/people/sven-schewe).
 
 Prior to this, I obtained a Master's degree from Hong Kong Baptist University and a Bachelor's degree from Anhui Agricultural University.
 
