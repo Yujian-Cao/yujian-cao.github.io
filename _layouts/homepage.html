@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <title>{{ site.title }} | {{site.affiliation}}</title>
+    <title>{{ site.title }}{% if site.chinese_name %} ({{ site.chinese_name }}){% endif %} | {{site.affiliation}}</title>
 
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="XKVQ24u_8B7m4KUZ8OSEDN0gKcPfawo9SV4bGCT8Up0" />
