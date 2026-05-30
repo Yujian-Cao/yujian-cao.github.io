@@ -16,7 +16,7 @@ My current research focuses on formal methods (FM), particularly reactive synthe
 
 ## News
 
-- **[May. 2026]** Our paper "Optimal LTLf Synthesis" is accepted to IJCAI 2026.
+- **[May 2026]** Our paper "Optimal LTLf Synthesis" has been accepted to IJCAI 2026.
 
 {% include_relative _includes/publications.md %}
 
