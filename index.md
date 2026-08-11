@@ -16,6 +16,7 @@ My current research focuses on formal methods (FM), particularly reactive synthe
 
 ## News
 
+- **[July 2026]** I presented our work on *Optimal LTLf Synthesis* at the [15th Workshop on Synthesis (SYNT 2026)](https://synt2026.github.io/).
 - **[May 2026]** Our paper "Optimal LTLf Synthesis" has been accepted to IJCAI 2026.
 
 {% include_relative _includes/publications.md %}
