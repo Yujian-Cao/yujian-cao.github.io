@@ -1,9 +1,0 @@
-main:
-
-  - title: Optimal LTLf Synthesis
-    authors: <strong>Yujian Cao</strong>, Sven Schewe, Qiyi Tang, Shufang Zhu
-    conference_short: IJCAI
-    conference: International Joint Conference on Artificial Intelligence <strong>(IJCAI)</strong>, 2026.
-    pdf: https://arxiv.org/pdf/2605.11544
-    poster: assets/files/poster.pdf
-    bibtex: https://arxiv.org/bibtex/2605.11544

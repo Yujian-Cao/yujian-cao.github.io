@@ -1,59 +1,41 @@
-# Basic Information 
-title: Yujian Cao
-chinese_name: 曹宇健
-position: Ph.D. Student
-affiliation: University of Liverpool
-email: yujian.cao@liverpool.ac.uk
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Search Engine Optimization (SEO)
-# The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: Yujian Cao, 曹宇健, formal methods, 形式化方法, LTLf, reactive synthesis, University of Liverpool, 利物浦大学, computer science, 计算机科学
-description: Ph.D. student at University of Liverpool working on formal methods and reactive synthesis.
-canonical: https://yujian-cao.github.io/
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+baseurl: "" # the subpath of your site, e.g. /blog
 
-# Links 
-# If you don't need one of them, you may delete the corresponding line.
-google_scholar: https://scholar.google.com/citations?user=m_env3YAAAAJ
-orcid: https://orcid.org/0009-0008-0109-3049
-cv_link: assets/files/resume.pdf
-github_link: https://github.com/Yujian-Cao
-linkedin: https://www.linkedin.com/in/yujian-cao/
-# twitter: https://twitter.com/
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
 
-# Images (e.g., your profile picture and your website's favicon) 
-# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
-avatar: ./assets/img/avatar.png
-# favicon: ./assets/img/favicon.png
-# favicon_dark: ./assets/img/favicon-dark.png
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
 
-# Footnote
-# You may use the option to disable the footnote, "Powered by Jekyll and Minimal Light theme."
-enable_footnote: true
+# timezone: Asia/Shanghai
 
-# Auto Dark Mode
-# You may use the option to disable the automatic dark theme
-auto_dark_mode: true
-
-# Font
-# You can use this option to choose between Serif or Sans Serif fonts.
-font: "Serif" # or "Sans Serif"
-
-# Google Analytics ID
-# Please remove this if you don't use Google Analytics
-# google_analytics: UA-111540567-4
-
-# Use this project as a remote theme for GitHub Pages
-# See the guide here: https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/adding-a-theme-to-your-github-pages-site-using-jekyll
-remote_theme: yaoyao-liu/minimal-light
-
-# The following files will be removed from the generated website.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - README_zh_Hans.md
-  - README_zh_Hant.md
-  - README_de.md
-  - LICENSE
-  - minimal-light.gemspec
-  - html_source_file/
+collections:
+  - publications
+  - news
+  - showcase
+  - posts
