@@ -6,13 +6,9 @@ group: Cats
 class: ""
 images:
 - assets/images/cats/carousel/img-9694.jpg
-- assets/images/cats/carousel/dsc-0017.jpg
 - assets/images/cats/carousel/dsc-0061.jpg
-- assets/images/cats/carousel/dsc-0069.jpg
-- assets/images/cats/carousel/dsc-0648.jpg
 - assets/images/cats/carousel/img-2839.jpg
 - assets/images/cats/carousel/img-7429.jpg
-- assets/images/cats/carousel/img-7491.jpg
 ---
 
 <div class="row mx-n2">
