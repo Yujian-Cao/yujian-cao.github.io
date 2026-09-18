@@ -8,7 +8,7 @@ positions:
 
 
 email: "yujian.cao@liverpool.ac.uk"
-# cv_link: link-to-your-cv-file
+cv_link: /assets/files/Resume.pdf
 gscholar: m_env3YAAAAJ
 github: Yujian-Cao
 bilibili: https://space.bilibili.com/343269121
@@ -47,4 +47,3 @@ education:
 #   logo: /assets/images/badges/PKU_red.png
 #   position: Research Intern
 #   date: Sep. 2019 - Jul. 2021
-
