@@ -111,6 +111,20 @@ div.lazy {
     font-size: 0.96em;
 }
 
+.profile-contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 0.85rem;
+    row-gap: 0.35rem;
+}
+
+.profile-contact-links a {
+    display: inline-flex;
+    align-items: center;
+}
+
 .profile-details {
     font-size: 0.95em;
 }

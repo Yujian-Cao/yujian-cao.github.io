@@ -43,10 +43,10 @@
                 </div>
 
                 <div class="row pt-2">
-                    <div class="col text-center h4">
+                    <div class="col text-center h4 profile-contact-links">
                         {% if site.data.profile.cv_link %}
-                        <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="Curriculum Vitae" aria-label="Curriculum Vitae">
-                            <i class="fas fa-file-lines"></i> CV
+                        <a class="no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="Curriculum Vitae" aria-label="Curriculum Vitae">
+                            CV
                         </a>
                         {% endif %}
 
@@ -56,43 +56,43 @@
                         {%- else -%}
                         {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                         {%- endif -%}
-                        <a class="px-1 no-break" target="_blank" href="{{ gscholar_url }}">
+                        <a class="no-break" target="_blank" href="{{ gscholar_url }}">
                             <i class="fab fa-google-scholar"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.github %}
-                        <a class="px-1 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                        <a class="no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
                             <i class="fab fa-github"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.bilibili %}
-                        <a class="px-1 no-break" target="_blank" href="{{ site.data.profile.bilibili }}">
+                        <a class="no-break" target="_blank" href="{{ site.data.profile.bilibili }}">
                             <i class="fa-brands fa-bilibili"></i>
                         </a>
                         {% endif %}
                         
                         {% if site.data.profile.wechat_qrcode %}
-                        <a class="px-1 no-break" data-toggle="modal" data-target="#modal-wechat">
+                        <a class="no-break" data-toggle="modal" data-target="#modal-wechat">
                             <i class="fab fa-weixin"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.twitter %}
-                        <a class="px-1 no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
+                        <a class="no-break" target="_blank" href="https://twitter.com/{{ site.data.profile.twitter }}">
                             <i class="fab fa-twitter"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.linkedin %}
-                        <a class="px-1 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                        <a class="no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         {% endif %}
 
                         {% if site.data.profile.orcid %}
-                        <a class="px-1 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
+                        <a class="no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
                             <i class="fab fa-orcid"></i>
                         </a>
                         {% endif %}
