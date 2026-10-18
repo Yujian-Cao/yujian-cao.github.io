@@ -3,9 +3,11 @@ pages:
 #       For example, the `navbar_title` field in `showcase.html` is "Showcase" and the `name` field here should also be "Showcase"
 # Temporarily hide the standalone page links while keeping the pages available
 # for possible future re-enablement.
-# - name: Home
-#   url: /
+- name: Home
+  url: /
 # - name: Blog
 #   url: /blog
 # - name: Showcase
 #   url: /showcase
+- name: CV
+  url: /cv

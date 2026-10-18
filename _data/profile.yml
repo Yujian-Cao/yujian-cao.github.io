@@ -10,6 +10,7 @@ positions:
 email: "yujian.cao@liverpool.ac.uk"
 cv_link: /assets/files/Resume.pdf
 gscholar: m_env3YAAAAJ
+dblp: https://dblp.org/pid/160/1321.html
 github: Yujian-Cao
 bilibili: https://space.bilibili.com/343269121
 # wechat_qrcode: /assets/images/etc/wechat.jpg
@@ -26,7 +27,7 @@ short_bio: >-
     My current research focuses on formal methods, particularly reactive synthesis with linear temporal logic on finite traces (LTLf). I hope to explore interdisciplinary applications of formal methods, especially in artificial intelligence.
   </p>
 
-portrait_url: /assets/images/photos/portrait.jpg
+portrait_url: /assets/images/photos/renwu.png
 
 education:
 - name: University of Liverpool

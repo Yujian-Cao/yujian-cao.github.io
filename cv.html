@@ -1,0 +1,35 @@
+---
+layout: default
+title: CV
+navbar_title: CV
+permalink: /cv/
+container_class: container-xl
+---
+
+<style>
+    .cv-viewer {
+        width: 100%;
+        height: calc(100vh - 170px);
+        min-height: 620px;
+        border: 0;
+        background: #343a40;
+    }
+
+    @media (max-width: 576px) {
+        .cv-viewer {
+            height: calc(100vh - 145px);
+            min-height: 520px;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <h1 class="pt-4 mb-4">CV</h1>
+        <iframe
+            class="cv-viewer"
+            src="{{ site.data.profile.cv_link | relative_url }}"
+            title="Curriculum Vitae">
+        </iframe>
+    </div>
+</div>

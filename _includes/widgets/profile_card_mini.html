@@ -9,13 +9,13 @@
                         <div class="figure d-none d-md-block">
                             <img 
                                 src="{{ site.data.profile.portrait_url | relative_url }}" 
-                                class="figure-img img-fluid" 
+                                class="figure-img img-fluid profile-portrait-desktop"
                                 data-toggle="tooltip" 
                                 data-placement="top" 
                                 title="{{ site.data.profile.portrait_caption }}">
                         </div>
                         <div class="mb-3 d-md-none text-center">
-                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle" style="max-width: 50%;" alt="Portrait">
+                            <img src="{{ site.data.profile.portrait_url | relative_url }}" class="rounded-circle profile-portrait-mobile" alt="Portrait">
                         </div>
                         {% endif %}
                     </div>
@@ -44,12 +44,6 @@
 
                 <div class="row pt-2">
                     <div class="col text-center h4 profile-contact-links">
-                        {% if site.data.profile.cv_link %}
-                        <a class="no-break" target="_blank" href="{{ site.data.profile.cv_link | relative_url }}" title="Curriculum Vitae" aria-label="Curriculum Vitae">
-                            CV
-                        </a>
-                        {% endif %}
-
                         {% if site.data.profile.gscholar %}
                         {%- if site.data.profile.gscholar contains 'scholar.google' -%}
                         {%- assign gscholar_url = site.data.profile.gscholar -%}
@@ -58,6 +52,12 @@
                         {%- endif -%}
                         <a class="no-break" target="_blank" href="{{ gscholar_url }}">
                             <i class="fab fa-google-scholar"></i>
+                        </a>
+                        {% endif %}
+
+                        {% if site.data.profile.dblp %}
+                        <a class="no-break" target="_blank" rel="noopener noreferrer" href="{{ site.data.profile.dblp }}" title="DBLP" aria-label="DBLP">
+                            <i class="ai ai-dblp"></i>
                         </a>
                         {% endif %}
                         

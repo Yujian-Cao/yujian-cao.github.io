@@ -55,6 +55,19 @@ h1, h2, h3, h4, h5, h6,
     line-break: unset;
 }
 
+.profile-portrait-desktop {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-portrait-mobile {
+    width: 42%;
+    height: auto;
+}
+
 .no-break {
     white-space: nowrap;
 }
