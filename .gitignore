@@ -15,3 +15,12 @@ Gemfile.lock
 /assets/images/cats/*
 !/assets/images/cats/carousel/
 !/assets/images/cats/carousel/**
+
+# LaTeX build products and local PDF-rendering intermediates
+/cv-source/*.aux
+/cv-source/*.log
+/cv-source/*.out
+/cv-source/*.fls
+/cv-source/*.fdb_latexmk
+/cv-source/*.pdf
+/tmp/
