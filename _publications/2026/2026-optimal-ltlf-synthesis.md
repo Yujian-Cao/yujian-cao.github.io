@@ -12,5 +12,16 @@ authors:
   - Qiyi Tang
   - Shufang Zhu
 links:
-  Arxiv: https://arxiv.org/abs/2605.11544
+  arXiv: https://arxiv.org/abs/2605.11544
+  DOI: https://doi.org/10.24963/ijcai.2026/4
+bibtex: |
+  @inproceedings{ijcai2026p4,
+    title     = {Optimal LTLf Synthesis},
+    author    = {Cao, Yujian and Schewe, Sven and Tang, Qiyi and Zhu, Shufang},
+    booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on
+                 Artificial Intelligence, {IJCAI-26}},
+    year      = {2026},
+    doi       = {10.24963/ijcai.2026/4},
+    url       = {https://doi.org/10.24963/ijcai.2026/4},
+  }
 ---
