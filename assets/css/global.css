@@ -157,3 +157,12 @@ div.lazy {
 .showcase-fumo {
   background: transparent;
 }
+
+/* Publication links: space above, and a little more room between buttons */
+.abstract-links {
+    margin-top: 0.6rem;
+}
+
+.abstract-links a + a {
+    margin-left: 0.4em;
+}
