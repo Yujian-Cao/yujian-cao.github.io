@@ -1,0 +1,13 @@
+{% assign news_list = site.news | sort: "date" | reverse | slice: 0, include.limit -%}
+
+<div class="my-3 bg-white shadow-sm rounded-xl">
+    <h6 class="p-4 mb-0 border-bottom border-gray">News</h6>
+    <div class="px-4 pb-1 small">
+        {% for item in news_list %}
+        <div class="my-1 py-1 d-flex {% unless forloop.first %}border-top border-gray{% endunless %}">
+            <div>{{ item.title }}</div>
+            <div class="ml-auto mt-auto text-muted no-break"><i>{{ item.date | date: "%B %Y" }}</i></div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
