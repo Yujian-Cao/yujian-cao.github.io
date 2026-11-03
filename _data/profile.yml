@@ -24,7 +24,7 @@ short_bio: >-
     Before starting my PhD, I worked as a network engineer at China Unicom and in IT support at Festo.
   </p>
   <p>
-    My current research focuses on formal methods, particularly reactive synthesis with linear temporal logic on finite traces (LTLf). I hope to explore interdisciplinary applications of formal methods, especially in artificial intelligence.
+    My current research focuses on formal methods, particularly reactive synthesis with linear temporal logic on finite traces (LTL<sub><i>f</i></sub>). I hope to explore interdisciplinary applications of formal methods, especially in artificial intelligence.
   </p>
 
 portrait_url: /assets/images/photos/renwu.jpg
