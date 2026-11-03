@@ -53,6 +53,11 @@
   \par\noindent\hspace*{\cvtitleindent}\textbf{#1}\hfill\mbox{#2}\par\nobreak
 }
 
+% Award entry: regular-weight name at left, year at the far right.
+\newcommand{\cvaward}[2]{%
+  \par\noindent\hspace*{\cvtitleindent}#1\hfill\mbox{#2}\par\nobreak
+}
+
 % Education entry: bold institution, regular-weight location, date at right.
 \newcommand{\cvedu}[3]{%
   \par\noindent\hspace*{\cvtitleindent}\textbf{#1}, #2\hfill\mbox{#3}\par\nobreak
@@ -93,7 +98,7 @@
 % Industry/research appointment.
 \newcommand{\cvexperience}[4]{%
   \cvedu{#1}{#2}{#3}%
-  \cvdetail{\emph{#4}}%
+  \cvdetail{#4}%
 }
 
 \begin{document}
@@ -138,11 +143,11 @@
   {Research Assistant}
 
 \cvsection{Scholarships \& Awards}
-\begin{cvawards}
-  \item 2026, University of Liverpool -- China Scholarship Council (CSC) Joint Scholarship
-  \item 2024, Hong Kong Baptist University Merit Scholarship
-  \item 2021, Anhui Agricultural University Scholarship
-\end{cvawards}
+\cvaward{University of Liverpool -- China Scholarship Council (CSC) Joint Scholarship}{2026}
+\vspace{3.5pt}
+\cvaward{Hong Kong Baptist University Merit Scholarship}{2024}
+\vspace{3.5pt}
+\cvaward{Anhui Agricultural University Scholarship}{2021}
 
 \cvsection{Academic Service}
 \noindent\hspace*{\cvtitleindent}Served as reviewer for ICASSP, ACL Rolling Review\par
