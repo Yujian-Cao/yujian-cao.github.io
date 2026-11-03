@@ -15,13 +15,12 @@ links:
   arXiv: https://arxiv.org/abs/2605.11544
   DOI: https://doi.org/10.24963/ijcai.2026/4
 bibtex: |
-  @inproceedings{ijcai2026p4,
-    title     = {Optimal LTLf Synthesis},
+  @inproceedings{cao2026optimalltlfsynthesis,
+    title     = {Optimal {LTL}$_f$ Synthesis},
     author    = {Cao, Yujian and Schewe, Sven and Tang, Qiyi and Zhu, Shufang},
-    booktitle = {Proceedings of the Thirty-Fifth International Joint Conference on
-                 Artificial Intelligence, {IJCAI-26}},
+    booktitle = {IJCAI},
+    pages     = {28--35},
     year      = {2026},
     doi       = {10.24963/ijcai.2026/4},
-    url       = {https://doi.org/10.24963/ijcai.2026/4},
   }
 ---
