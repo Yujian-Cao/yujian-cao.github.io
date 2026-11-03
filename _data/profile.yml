@@ -20,7 +20,7 @@ bilibili: https://space.bilibili.com/343269121
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am Yujian Cao (曹宇健), a Ph.D. student at the <a href="https://www.liverpool.ac.uk/computer-science-and-informatics/" target="_blank">School of Computer Science and Informatics</a>, <a href="https://www.liverpool.ac.uk/" target="_blank">University of Liverpool</a>, advised by <a href="https://www.liverpool.ac.uk/people/shufang-zhu" target="_blank">Dr. Shufang Zhu</a> and <a href="https://www.liverpool.ac.uk/people/sven-schewe" target="_blank">Prof. Sven Schewe</a>, with support from the <a href="https://www.csc.edu.cn/" target="_blank">China Scholarship Council (CSC)</a>.
+    I am Yujian Cao (曹宇健), a PhD student at the <a href="https://www.liverpool.ac.uk/computer-science-and-informatics/" target="_blank">School of Computer Science and Informatics</a>, <a href="https://www.liverpool.ac.uk/" target="_blank">University of Liverpool</a>, advised by <a href="https://www.liverpool.ac.uk/people/shufang-zhu" target="_blank">Dr. Shufang Zhu</a> and <a href="https://www.liverpool.ac.uk/people/sven-schewe" target="_blank">Prof. Sven Schewe</a>, with support from the <a href="https://www.csc.edu.cn/" target="_blank">China Scholarship Council (CSC)</a>.
     Before starting my PhD, I worked as a network engineer at China Unicom and in IT support at Festo.
   </p>
   <p>
@@ -41,7 +41,7 @@ education:
   date: Sep. 2018 - Jun. 2022
 - name: Anhui Normal University
   position: BA in Chinese Language and Literature
-  date: Aug. 2019 - Dec. 2022
+  date: Sep. 2019 - Dec. 2022
 
 # experience:
 # - name: Peking University
