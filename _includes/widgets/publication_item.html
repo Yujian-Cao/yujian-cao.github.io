@@ -22,7 +22,15 @@
                 <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
                 {% endif %}
                 {% endfor %}
+            {% if item.bibtex %}
+            <a href="#bib-{{ item.id | slugify }}-d" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bib-{{ item.id | slugify }}-d">[BibTeX]</a>
+            {% endif %}
             </p>
+            {% if item.bibtex %}
+            <div class="collapse" id="bib-{{ item.id | slugify }}-d">
+                <pre class="small text-left mt-2 mb-0 p-3 rounded-sm" style="background-color:#f6f8fa; overflow-x:auto; white-space:pre;"><code>{{ item.bibtex | strip | escape }}</code></pre>
+            </div>
+            {% endif %}
 
         </div>
     </div>
@@ -46,7 +54,15 @@
                     <a target="_blank" href="{{ link[1] }}">[{{ link[0] }}]</a>
                     {% endif %}
                     {% endfor %}
+                {% if item.bibtex %}
+                <a href="#bib-{{ item.id | slugify }}-m" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="bib-{{ item.id | slugify }}-m">[BibTeX]</a>
+                {% endif %}
                 </p>
+                {% if item.bibtex %}
+                <div class="collapse" id="bib-{{ item.id | slugify }}-m">
+                    <pre class="small text-left mt-2 mb-0 p-3 rounded-sm" style="background-color:#f6f8fa; overflow-x:auto; white-space:pre;"><code>{{ item.bibtex | strip | escape }}</code></pre>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
