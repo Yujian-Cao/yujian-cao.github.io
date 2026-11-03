@@ -1,0 +1,195 @@
+% ================================================================
+% RESEARCH CV
+% Compile with XeLaTeX (Overleaf: Menu -> Compiler -> XeLaTeX).
+% Requires Linux Biolinum O and Linux Libertine O (bundled with TeX Live / Overleaf).
+% ================================================================
+\documentclass[10pt,a4paper]{article}
+
+% ---- Page, fonts and links --------------------------------------
+\usepackage[left=0.44in,right=0.44in,top=0.68in,bottom=0.39in]{geometry}
+\usepackage{fontspec} % XeLaTeX only
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{lmroman10-regular.otf}[
+  BoldFont=lmroman10-bold.otf,
+  ItalicFont=lmroman10-italic.otf,
+  BoldItalicFont=lmroman10-bolditalic.otf]
+\setsansfont{Linux Biolinum O}
+\newfontfamily\cvcontactfont{Linux Libertine O}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,allcolors=black,pdfborder={0 0 0},
+  pdftitle={Yujian Cao -- Curriculum Vitae},pdfauthor={Yujian Cao}}
+\usepackage{enumitem}
+\usepackage{microtype}
+\pagestyle{empty}
+\raggedbottom\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\emergencystretch}{1em}
+
+% ---- Style controls: adjust these once for the entire CV --------
+\newlength{\cvtitleindent}  \setlength{\cvtitleindent}{2pt}   % entry titles
+\newlength{\cvdetailindent} \setlength{\cvdetailindent}{17pt} % detail lines
+\newlength{\cvpubindent}    \setlength{\cvpubindent}{17pt}    % publication hanging indent
+\newlength{\cvsectiongap}   \setlength{\cvsectiongap}{15pt}   % space above section headings
+% Section: uppercase, bold Linux Biolinum, thin line underneath.
+\newcommand{\cvsection}[1]{%
+  \par\vspace{\cvsectiongap}%
+  {\sffamily\bfseries\fontsize{12pt}{13pt}\selectfont\MakeUppercase{#1}}\par\nobreak
+  \vspace{2.5pt}\hrule height 0.45pt\vspace{3.5pt}%
+}
+
+% Tighter rule spacing for the first heading on page 2.
+\newcommand{\cvsectionpagetwo}[1]{%
+  \par\vspace{\cvsectiongap}%
+  {\sffamily\bfseries\fontsize{12pt}{13pt}\selectfont\MakeUppercase{#1}}\par\nobreak
+  \vspace{-2.2pt}\hrule height 0.45pt\vspace{2.8pt}%
+}
+
+% A bold label at left; date aligned to the far right.
+% LTL with italic subscript f.
+\newcommand{\ltlf}{LTL\ensuremath{_{f}}}
+
+\newcommand{\cvdated}[2]{%
+  \par\noindent\hspace*{\cvtitleindent}\textbf{#1}\hfill\mbox{#2}\par\nobreak
+}
+
+% Education entry: bold institution, regular-weight location, date at right.
+\newcommand{\cvedu}[3]{%
+  \par\noindent\hspace*{\cvtitleindent}\textbf{#1}, #2\hfill\mbox{#3}\par\nobreak
+}
+
+% Indented details underneath a dated entry.
+\newcommand{\cvdetail}[1]{%
+  \noindent\hspace*{\cvdetailindent}#1\par\nobreak
+}
+\newcommand{\cventrygap}{\vspace{9pt}}
+
+% Publications: fixed-width [1] numbering and hanging title indent.
+\newcounter{cvpub}
+\newcommand{\cvpublication}[3]{%
+  \stepcounter{cvpub}%
+  \par\noindent\hangindent=\cvpubindent\hangafter=1\hspace*{\cvtitleindent}%
+  \makebox[\dimexpr\cvpubindent-\cvtitleindent\relax][l]{[\arabic{cvpub}]}#1\par\nobreak
+  \noindent\hspace*{\cvpubindent}#2\par\nobreak
+  \noindent\hspace*{\cvpubindent}#3\par\vspace{6pt}%
+}
+% Underlined placeholder; replace example.org with the actual PDF URL.
+\newcommand{\cvpdf}[1]{\href{#1}{\underline{[PDF]}}}
+
+% Awards and project bullets: short dash matching the reference.
+\newenvironment{cvawards}{%
+  \begin{itemize}[label={-},leftmargin=\cvdetailindent,labelsep=5pt,
+    topsep=0pt,itemsep=3.5pt,parsep=0pt,partopsep=0pt]
+}{\end{itemize}}
+\newenvironment{cvbullets}{%
+  \begin{itemize}[label={-},leftmargin=16pt,labelsep=5pt,
+    topsep=1pt,itemsep=0pt,parsep=0pt,partopsep=0pt]
+}{\end{itemize}}
+
+% Project title and date; contents are written in cvbullets below.
+\newcommand{\cvproject}[2]{\cvdated{#1}{#2}}
+\newcommand{\cvprojectgap}{\vspace{12pt}}
+
+% Industry/research appointment.
+\newcommand{\cvexperience}[4]{%
+  \cvedu{#1}{#2}{#3}%
+  \cvdetail{\emph{#4}}%
+}
+
+\begin{document}
+\fontsize{10pt}{14.15pt}\selectfont
+
+{\sffamily\bfseries\fontsize{22pt}{25pt}\selectfont Yujian Cao}\par
+\vspace{1pt}
+{\cvcontactfont\fontsize{11pt}{13pt}\selectfont
+  \href{mailto:yujian.cao@liverpool.ac.uk}{yujian.cao@liverpool.ac.uk}\enspace\textbar\enspace
+  \href{https://yujian-cao.github.io/}{yujian-cao.github.io}\enspace\textbar\enspace
+  \href{https://dblp.org/pid/160/1321.html}{\underline{[DBLP]}}
+}\par\vspace{4pt}
+
+\cvsection{Education}
+\cvedu{University of Liverpool}{United Kingdom}{09/2025 -- Present}
+\cvdetail{PhD in Computer Science}
+\cvdetail{\emph{Supervisors: Dr. Shufang Zhu and Prof. Sven Schewe}}
+\cventrygap
+
+\cvedu{Hong Kong Baptist University}{Hong Kong SAR}{09/2022 -- 07/2024}
+\cvdetail{MA in Artificial Intelligence and Digital Media}
+\cventrygap
+
+\cvedu{Anhui Agricultural University}{China}{09/2018 -- 06/2022}
+\cvdetail{BEng in Computer Science and Technology}
+\cventrygap
+
+\cvedu{Anhui Normal University}{China}{09/2019 -- 12/2022}
+\cvdetail{BA in Chinese Language and Literature}
+
+\cvsection{Research Interests}
+\noindent\hspace*{\cvtitleindent}Formal Methods, Reactive Synthesis, Linear Temporal Logic on Finite Traces (\ltlf{})\par
+
+\cvsection{Experience}
+\cvexperience{Festo}{China}{03/2025 -- 07/2025}
+  {IT Technical Support Intern}
+\cventrygap
+\cvexperience{Sophia University}{Japan}{12/2024 -- 03/2025}
+  {Visiting Student}
+\cventrygap
+\cvexperience{Beijing Normal--Hong Kong Baptist University}{China}{01/2024 -- 05/2024}
+  {Research Assistant}
+
+\cvsection{Scholarships \& Awards}
+\begin{cvawards}
+  \item 2026, University of Liverpool -- China Scholarship Council (CSC) Joint Scholarship
+  \item 2024, Hong Kong Baptist University Merit Scholarship
+  \item 2021, Anhui Agricultural University Scholarship
+\end{cvawards}
+
+\cvsection{Academic Service}
+\noindent\hspace*{\cvtitleindent}Served as reviewer for ICASSP, ACL Rolling Review\par
+
+\cvsection{Publications}
+\cvpublication
+  {Optimal \ltlf{} Synthesis.}
+  {\textbf{Yujian Cao}, Sven Schewe, Qiyi Tang, Shufang Zhu}
+  {In \emph{International Joint Conference on Artificial Intelligence} (IJCAI), 2026. \cvpdf{https://ijcai.org/proceedings/2026/0004.pdf}}
+
+% \cvsection{Selected Research Projects}
+
+
+% \cvproject{Efficient Foundation-Model Inference for Streaming Applications}{2023 -- Present}
+% \begin{cvbullets}
+%   \item Designed an adaptive routing algorithm that selects models according to query complexity and available resources, reducing inference cost while maintaining target accuracy on streaming benchmarks.
+%   \item Developed an online optimization framework that combines predictive models with lightweight decision rules, supporting resource-aware execution across text and image-processing tasks, with deployment-time constraints for batch and interactive workloads in a shared cluster.
+% \end{cvbullets}
+% \cvprojectgap
+
+% \cvproject{Unified Intermediate Representation for Data Query Languages}{2021 -- 2023}
+% \begin{cvbullets}
+%   \item Proposed a common intermediate representation that maps natural-language queries to structured programs in different execution environments.
+%   \item Implemented a source-to-source translator supporting multiple graph and relational query formats, together with a reusable parser and evaluation toolkit.
+%   \item Evaluated compositional generalization under domain transfer and low-resource settings, with consistent improvements over task-specific baseline systems, including unseen query structures and nested operations that are absent from the training set.
+% \end{cvbullets}
+% \cvprojectgap
+
+% \cvproject{Automatic Performance Optimization for Software Systems}{2020 -- 2022}
+% \begin{cvbullets}
+%   \item Constructed a benchmark of performance regressions from public code repositories and trained a detection model using commit-level program features.
+%   \item Studied compiler optimization selection and heterogeneous device scheduling, comparing learned policies against conventional heuristic approaches.
+% \end{cvbullets}
+% \cvprojectgap
+
+% \cvproject{Representation Learning for Code Generation and Summarization}{2018 -- 2020}
+% \begin{cvbullets}
+%   \item Developed a contextual code representation model that uses historical changes to support automatic commit-message generation and semantic search.
+%   \item Combined abstract syntax tree features with retrieval-based ranking to improve the relevance of generated explanations for source-code changes.
+%   \item Explored graph-based information flow and syntax-aware attention for source-code summarization across several programming languages.
+% \end{cvbullets}
+% \cvprojectgap
+
+% \cvproject{Task-Oriented Dialogue with External Knowledge Access}{2020}
+% \begin{cvbullets}
+%   \item Implemented a dialogue model that retrieves relevant passages from an external collection to answer questions beyond a structured task database.
+%   \item Assessed response quality with automatic metrics and human evaluation, documenting error types and limitations under distribution shifts.
+% \end{cvbullets}
+
+\end{document}
