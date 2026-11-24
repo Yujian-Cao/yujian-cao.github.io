@@ -97,17 +97,6 @@ div.lazy {
     min-height: 80px;
 }
 
-.carousel-image {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: #f8f9fa;
-}
-
-.carousel .carousel-indicators li {
-    width: 20px;
-}
-
 .badge-publication {
     font-size: 100%;
 }
@@ -154,10 +143,6 @@ div.lazy {
 .education-degree {
     font-size: 1em;
 }
-.showcase-fumo {
-  background: transparent;
-}
-
 /* Publication links: space above, and a little more room between buttons */
 .abstract-links {
     margin-top: 0.6rem;

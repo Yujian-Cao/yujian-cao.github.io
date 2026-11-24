@@ -60,6 +60,12 @@
                             <i class="ai ai-dblp"></i>
                         </a>
                         {% endif %}
+
+                        {% if site.data.profile.orcid %}
+                        <a class="no-break" target="_blank" rel="noopener noreferrer" href="https://orcid.org/{{ site.data.profile.orcid }}" title="ORCID" aria-label="ORCID">
+                            <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+                        </a>
+                        {% endif %}
                         
                         {% if site.data.profile.github %}
                         <a class="no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
@@ -91,11 +97,6 @@
                         </a>
                         {% endif %}
 
-                        {% if site.data.profile.orcid %}
-                        <a class="no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">
-                            <i class="fab fa-orcid"></i>
-                        </a>
-                        {% endif %}
                     </div>
                 </div>
             </div>
